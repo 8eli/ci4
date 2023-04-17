@@ -1,0 +1,45 @@
+.bg-custom {
+   background-color: hsl(325, 51%, 43%);
+}
+
+ #KnowMe {
+   height: 400px;
+    Background-color: hsl(325, 51%, 43%);
+ }
+ #HM {
+   height: 250px;
+    margin-top: 10%;
+    Background-color: hsl(325, 51%, 43%);
+ }
+ #hobby{
+
+   height: 400px;
+   Background-color: hsl(325, 51%, 43%);
+}
+
+.bg-hd{
+
+   background-color: aqua;
+}
+
+.rounded-circle {
+   margin-left: 35%;
+
+}
+a.nav-link {
+color: black;
+}
+
+#poto {
+
+   margin-top: 30px;
+}
+.CommentForm {
+   background-color:  hsl(325, 51%, 43%);
+
+}
+
+.bg-cl{
+   background-color: #4cb8af;
+}
+
