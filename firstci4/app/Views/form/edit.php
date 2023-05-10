@@ -11,7 +11,8 @@
     </script>
 </head>
 <body>
-<div class="container">
+    <div class=" card-body" >
+<div class="container text-white bg-dark py-4">
     <div class="jumbotron">
         <h2> Edit </h2>
         <hr>
@@ -19,16 +20,17 @@
             <h1>Comment About Me</h1>
             <input type="hidden" name="_method" value="PUT">
 
-            <input type="text" id="email" name="email" class="form-control mb-3" value="<?=$opinion['email']; ?>" placeholder="Email Address">
+            <input type="text" id="email" name="email" class="form-control mb-3 mx-1" value="<?=$opinion['email']; ?>" placeholder="Email Address">
 
-            <input type="text" id="name" name="name" class="form-control mb-3" value="<?=$opinion['name']; ?>" placeholder="Name">
+            <input type="text" id="name" name="name" class="form-control mb-3 mx-1" value="<?=$opinion['name']; ?>" placeholder="Name">
 
-            <textarea name="comment" id="comment" class="form-control mb-3" placeholder="Comment"><?=$opinion['comment'];?></textarea>
+            <textarea name="comment" id="comment" class="form-control mb-3 mx-1" placeholder="Comment"><?=$opinion['comment'];?></textarea>
 
             <button type="submit" class=" btn btn-primary">Update</button>
             <a href="/form" class="btn btn-danger">Cancel</a>
         </form>
     </div>
-</div>      
+</div>   
+</div>
 </body>
 </html>
