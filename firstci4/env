@@ -31,10 +31,10 @@ app.baseURL = 'http://localhost/'
 #--------------------------------------------------------------------
 
 database.default.hostname = localhost
- database.default.database = usa_bacus
- database.default.username = root
- database.default.password = 
- database.default.DBDriver = MySQLi
+database.default.database = usa_bacus
+database.default.username = root
+database.default.password = 
+database.default.DBDriver = MySQLi
 # database.default.DBPrefix =
 # database.default.port = 3306
 

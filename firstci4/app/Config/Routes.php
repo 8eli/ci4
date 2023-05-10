@@ -33,30 +33,17 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 //$routes->get('/', 'Home::index');
 
-$routes->add('product/(:any)/(:any)', 'Shop::product/$1/$2');
-$routes->add('blog', function () {
-    return "<h2>This is a blog</h2>";
-});
-
-$routes->group('admin', function ($routes){
-    $routes->add('user', 'Admin\Users::index');
-    $routes->add('users', 'Admin\Users::getAllUsers');
-    $routes->add('product/(:any)/(:any)', 'Admin\Shop::product/$1/$2');
-    
-    ////Blog routes
-    $routes->add('blog', 'Admin\Blog::index');
-    $routes->add('blog/new', 'Admin\Blog::createNew');
-    $routes->add('blog/new', 'Admin\Blog::saveBlog');
-    
-
-    //$routes->match(['get', 'post'], 'Admin\Blog::index');
 
 //CRUD - table
-$routes->get('/table','TableController::index');
-$routes->get('/table-add','TableController::create');
-$routes->post('/table-store','TableController::store');
+$routes->get('/form','TableController::index');
+$routes->post('/form/add','TableController::store');
 
-});
+$routes->get('form/edit/(:num)', 'TableController::edit/$1');
+$routes->put('form/update/(:num)', 'TableController::update/$1'); 
+$routes->get('form/delete/(:num)', 'TableController::delete/$1');
+$routes->get('form/view/(:num)', 'TableController::editv/$1');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
